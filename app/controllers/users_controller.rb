@@ -12,10 +12,7 @@ class UsersController < ApplicationController
     end
     #GET user
     def show_user 
-        render json:{
-         user: @current_user_id,
-         blog: User.blogs
-        }, status: :ok
+        render json: @current_user_id, status: :ok
     end
     # POST /users
     def create
