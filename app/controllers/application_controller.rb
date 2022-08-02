@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+   require 'dotenv/load'
     include JsonWebToken
     before_action :authentication_request
     private
